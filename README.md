@@ -54,6 +54,7 @@ def mask_dim(current):
     current = np.concatenate([np.where(current == i, 1, 0) for i in range(1,8)], 1)
     return current
 ```
+  
 Takes mask array with shape of 1x256x256 and extractes mask 1-7 values as new dimensions with value of 1, so return shape is 7x256x256.  
 Example:  
 ```
