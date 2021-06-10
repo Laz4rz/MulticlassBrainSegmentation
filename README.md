@@ -12,5 +12,7 @@ for patient in data:
 ```
 By each iteration through data object you get next 3D MRI image as a numpy array of 256x256x256 shape.  
 Object length is taken from the filtered amount of folders in the path directory.  
-```len([dir for dir in next(os.walk(self.folderpath))[1] if dir.startswith('sub')])```
+```
+len([dir for dir in next(os.walk(self.folderpath))[1] if dir.startswith('sub')])
+```
 
