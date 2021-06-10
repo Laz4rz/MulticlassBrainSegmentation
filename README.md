@@ -21,7 +21,7 @@ data = MRIDataset(path)
 for patient in data:
   print(patient.shape)
 ```
-By each iteration through data object you get next 3D MRI image as a numpy array of 256x256x256 shape.  
+By each iteration through data object you get next 3D MRI image as a numpy array of 256 x 256 x 256 shape.  
 Object length is taken from the filtered length of folders in the path directory list.  
 ```python
 def __len__(self):
