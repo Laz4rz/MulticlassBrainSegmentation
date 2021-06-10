@@ -8,6 +8,11 @@ As stated before - the repository has only some parts of the code, but if you ha
 ```python
 python train5.py LEARNING_RATE BATCH_SIZE EPOCHS TRAIN_AMOUNT VALID_AMOUNT SAVE_MODEL_NAME DATA_PATH
 ```
+**Resolved problems**:
+- RAM management
+Made DataLoader object iterable so we are able to load the data patient by patient during training - resulted in significant RAM usage decrease.
+- VRAM management
+Metrics variables HABE TO be changed to float() so they do not drag gradient vectors with them - significant VRAM usage decrease.
 
 ## Data Loader
 You can create an iterative data object by passing the data folder path to the MRIDataset class as:
