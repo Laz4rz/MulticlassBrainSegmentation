@@ -1,1 +1,1 @@
-# MulticlassBrainSegmentation
+# Multiclass Brain Segmentation
