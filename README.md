@@ -16,7 +16,7 @@ Epochs: 1, Images: 2560, Batch: 16, Jaccard: 0.28
 ![wynikimulti](https://user-images.githubusercontent.com/62252332/121529736-fab46500-c9fc-11eb-9dbc-77e4821e9253.png)  
 
 
-## Training Script
+## Training Script (working on it)
 As stated before - the repository has only some parts of the code, but if you had them all you could run the training by:
 ```python
 python train5.py LEARNING_RATE BATCH_SIZE EPOCHS TRAIN_AMOUNT VALID_AMOUNT SAVE_MODEL_NAME DATA_PATH
