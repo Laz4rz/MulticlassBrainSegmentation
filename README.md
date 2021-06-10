@@ -8,7 +8,7 @@ As stated before - the repository has only some parts of the code, but if you ha
 ```python
 python train5.py LEARNING_RATE BATCH_SIZE EPOCHS TRAIN_AMOUNT VALID_AMOUNT SAVE_MODEL_NAME DATA_PATH
 ```
-where BATCH_SIZE - amount of pictures to go into one training step, TRAIN_AMOUNT - number of training patients to load, VALID_AMOUNT - number of validation patients to load, SAVE_MODEL - where to save the trained model, DATA_PATH - what goes to the Data Loader object.
+where __BATCH_SIZE__ - amount of pictures to go into one training step, TRAIN_AMOUNT - number of training patients to load, VALID_AMOUNT - number of validation patients to load, SAVE_MODEL - where to save the trained model, DATA_PATH - what goes to the Data Loader object.
 
 **Resolved problems**:
 - RAM management
