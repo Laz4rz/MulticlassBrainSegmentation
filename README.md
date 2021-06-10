@@ -56,6 +56,6 @@ def mask_dim(current):
 ```
 Takes mask array with shape of 1x256x256 and extractes mask 1-7 values as new dimensions with value of 1, so return shape is 7x256x256.  
 Example:  
-input = [1 2 1] -> output = mask_dim(input) -> [[1 0 1], [0 1 0]]
-        [0 1 2]                                 [0 1 0]  [0 0 1]
-        [1 2 0]                                 [1 0 0]  [0 0 0]
+input = [1 2 1] -> output = mask_dim(input) -> [[1 0 1], [0 1 0]]  
+        [0 1 2]                                 [0 1 0]  [0 0 1]  
+        [1 2 0]                                 [1 0 0]  [0 0 0]  
