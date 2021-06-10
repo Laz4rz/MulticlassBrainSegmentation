@@ -36,7 +36,7 @@ def __len__(self):
 ----
 ## Utils
 We use utils functions to prepare loaded data for the UNET train/valid pass.
-```
+```python
 def prepare_one(x,y, batch):
     x = np.expand_dims(x, 1)
     x = np.moveaxis(x, 3, 0)
@@ -49,13 +49,15 @@ def prepare_one(x,y, batch):
     return ready
 ```
 Takes a list of images as _x_, masks as _y_ and number of images and masks to pack in a training/valid batch. Gives torch.DataLoader objects in return.  
-```
+```python
 def mask_dim(current):
     current = np.concatenate([np.where(current == i, 1, 0) for i in range(1,8)], 1)
     return current
 ```
 Takes mask array with shape of 1x256x256 and extractes mask 1-7 values as new dimensions with value of 1, so return shape is 7x256x256.  
 Example:  
+```
 input = [1 2 1] -> output = mask_dim(input) -> [[1 0 1], [0 1 0]]  
         [0 1 2]                                 [0 1 0]  [0 0 1]  
         [1 2 0]                                 [1 0 0]  [0 0 0]  
+```
