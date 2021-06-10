@@ -3,6 +3,18 @@ My code snippets from the UNET based multiclass brain segmentation model made fo
 
 As the challenge is still ongoing the repository has only less "custom made" elements like data loader or the training script.
 
+## Current Results
+Model trained on CPU to check if there are any problems with code.
+- Single class segmentation:
+Epochs: 1, Images: 2560, Batch: 16, Jaccard: 0.42  
+![195867825_164458648978423_8123026248998937840_n](https://user-images.githubusercontent.com/62252332/121528251-9644d600-c9fb-11eb-8478-a69a4ca0e782.png)  
+Brain image on bottom, red area - label/mask, orange spots - model prediction.
+- Multiclass segmentation:
+Epochs: 1, Images: 2560, Batch: 16, Jaccard: 0.28 
+![wynikimulti](https://user-images.githubusercontent.com/62252332/121529736-fab46500-c9fc-11eb-9dbc-77e4821e9253.png)  
+Brain image on bottom, red area - label/mask, orange spots - model prediction.
+
+
 ## Training Script
 As stated before - the repository has only some parts of the code, but if you had them all you could run the training by:
 ```python
