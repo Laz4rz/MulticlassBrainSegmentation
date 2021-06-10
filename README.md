@@ -4,6 +4,10 @@ My code snippets from the UNET based multiclass brain segmentation model made fo
 As the challenge is still ongoing the repository has only less "custom made" elements like data loader or the training script.
 
 ## Training Script
+As stated before - the repository has only some parts of the code, but if you had them all you could run the training by:
+```python
+python train5.py LEARNING_RATE BATCH_SIZE EPOCHS TRAIN_AMOUNT VALID_AMOUNT SAVE_MODEL_NAME DATA_PATH
+```
 
 ## Data Loader
 You can create an iterative data object by passing the data folder path to the MRIDataset class as:
