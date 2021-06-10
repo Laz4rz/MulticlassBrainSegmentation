@@ -15,6 +15,10 @@ where _BATCH_SIZE_ - amount of pictures to go into one training step, _TRAIN_AMO
 Made DataLoader object iterable so we are able to load the data patient by patient during training - resulted in significant RAM usage decrease.
 - VRAM management
 Metrics variables HABE TO be changed to float() so they do not drag gradient vectors with them - significant VRAM usage decrease.
+
+**To do:**  
+- Cross Validation
+- Data Augmentation
 ----
 ## Data Loader
 You can create an iterative data object by passing the data folder path to the MRIDataset class as:
@@ -52,10 +56,6 @@ def mask_dim(current):
 ```
 Takes mask array with shape of 1x256x256 and extractes mask 1-7 values as new dimensions with value of 1, so return shape is 7x256x256.  
 Example:  
-$$
-  \begin{matrix}
-   1 & 2 & 3 \\
-   4 & 5 & 6 \\
-   7 & 8 & 9
-  \end{matrix} \tag{1}
-$$
+input = [1 2 1] -> output = mask_dim(input) -> [[1 0 1], [0 1 0]]
+        [0 1 2]                                 [0 1 0]  [0 0 1]
+        [1 2 0]                                 [1 0 0]  [0 0 0]
