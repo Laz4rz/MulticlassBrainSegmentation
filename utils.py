@@ -172,7 +172,8 @@ def prepare_one(x,y, batch):
     y = np.expand_dims(y, 1)
     y = np.moveaxis(y, 3, 0)
     y = np.moveaxis(y, 1, 2)
-    # zipped = list(zip(x,y))
-    # ready = DataLoader(zipped, batch_size=batch)
-    return x, y
+    zipped = list(zip(x,y))
+    ready = DataLoader(zipped, batch_size=batch)
+    return ready
+    # return x, y
 
