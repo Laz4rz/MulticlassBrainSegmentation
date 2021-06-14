@@ -27,7 +27,7 @@ where _BATCH_SIZE_ - amount of pictures to go into one training step, _TRAIN_AMO
 - RAM management
 Made DataLoader object iterable so we are able to load the data patient by patient during training - resulted in significant RAM usage decrease.
 - VRAM management
-Metrics variables HABE TO be changed to float() so they do not drag gradient vectors with them - significant VRAM usage decrease.
+Metrics variables HAVE TO be changed to float() so they do not drag gradient vectors with them - significant VRAM usage decrease.
 
 **To do:**  
 - Cross Validation
